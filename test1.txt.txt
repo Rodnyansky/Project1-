@@ -1,2 +1,39 @@
 waerhtrjhjk.lk;l';
-Снытко Дмитрий 
+Снытко Дмитрий
+
+ 
+#include <stdio.h>							 
+#include <stdlib.h>							
+#include <math.h>					
+
+int main()												 
+{											
+	system("Chcp 1251");								
+	int a, b, c, k;										
+	bool flag = 0;
+	printf(" Введите a:  ");							
+	scanf("%i", &a);									
+	printf(" Введите b:  ");							
+	scanf("%i", &b);									
+	printf(" Введите c:  ");							
+	scanf("%i", &c);									
+	printf(" Введите k:  ");							
+	scanf("%i", &k);									
+	if (a % k == 0)										
+	{
+		flag = 1;
+			printf(" a является делителем k \n");
+	}	
+	if (b % k == 0)
+	{
+		flag = 1;
+		printf(" b является делителем k \n");
+	}	
+	if (c % k == 0)										
+	{flag = 1;
+	
+		printf(" c является делителем k \n");	
+	}
+	if (!flag)
+		printf(" ни одно из чисел не кратно k  \n");
+}	
